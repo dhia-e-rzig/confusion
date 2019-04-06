@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Feedback, ContactType } from '../shared/feedback';
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -32,6 +32,7 @@ export class ContactComponent implements OnInit {
       message: ''
     });
   }
+
   onSubmit() {
     this.feedback = this.feedbackForm.value;
     console.log(this.feedback);
